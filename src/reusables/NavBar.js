@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SearchIcon from "@mui/icons-material/Search";
+import MiniDrawer from "../reusables/MiniDrawer";
 
 function NavBar() {
   return (
@@ -9,6 +10,14 @@ function NavBar() {
         <div className="container mx-auto flex items-center justify-between ">
           
           <ul className="nav flex flex-wrap lg:space-x-4 ">
+          <li>
+              <Link
+                to="#"
+                className="nav-link px-2 text-white hover:bg-grey-400"
+              >
+                <MiniDrawer />
+              </Link>
+            </li>
             <li><Link to="/" className="nav-link px-2 text-black">Home</Link></li>
             <li><Link to="/about" className="nav-link px-2 text-black">About</Link></li>
             <li><Link to="/contact" className="nav-link px-2 text-black">Contact us</Link></li>

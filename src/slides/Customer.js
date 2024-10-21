@@ -41,20 +41,20 @@ function Customer() {
               </Link>
             </li>
             <li>
-              <Link to="#" className="nav-link px-2 text-black ">
+              <Link to="/about" className="nav-link px-2 text-black ">
                 About us
               </Link>
             </li>
             <li>
-              <Link to="#" className="nav-link px-2 text-black ">
+              <Link to="/contact" className="nav-link px-2 text-black ">
                 Contact us
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="#" className="nav-link px-2 text-black ">
                 Show Categories
               </Link>
-            </li>
+            </li> */}
           </ul>
           <div className="relative flex gap-3 items-center">
             <form className="" role="search">
