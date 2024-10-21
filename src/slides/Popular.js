@@ -71,7 +71,7 @@ const Popular = () => {
 
   return (
     <div>
-      <NavBar/>
+      {/* <NavBar/> */}
     <section id="popular" className="bg-[#F1FAEE] p-8">
       <div className="text-center mb-16">
         <h2 className="text-3xl lg:text-4xl font-Playfair font-bold text-[#457B9D]">
@@ -97,7 +97,7 @@ const Popular = () => {
         ))}
       </div>
     </section>
-    <Footer/>
+    {/* <Footer/> */}
     </div>
   );
 };
