@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+/* header {
+  background-color: #A8DADC;
+  font-family: "Jost", sans-serif
+} */
+
+p li body {
+  font-family: "PT Sans", sans-serif;
+}
+/* Hover functionality for dropdowns */
+.nav-item:hover .dropdown-menu {
+  display: block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Dropdown customization */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  padding: 0.5rem 1rem;
+  height: auto;
+  border-radius: 0.25rem ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.dropdown-item{
+  color: black;
+}
+
+.dropdown-item:hover {
+  text-decoration: underline;
+}
+
+.IconBanner_iconImg__axP9l {
+  filter: invert(48%) sepia(56%) saturate(344%) hue-rotate(184deg) brightness(67%) contrast(89%);
+
+  width: 100px;
+  height:100px;
+}
+/* Ensure h1 has responsive size */
+h1 {
+  font-size: 3rem; /* or use 2.5em, or similar */
+  /* Add media queries for responsiveness */
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* adjust for smaller screens */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; /* adjust for mobile screens */
+  }
 }
 
-.App-link {
-  color: #61dafb;
+/* Prevent image from pushing down the text */
+.carousel-inner {
+  flex: 1; /* ensure the carousel takes the available space */
 }
 
-@keyframes App-logo-spin {
+.home {
+  display: flex; /* Maintain flex layout */
+  flex-direction: row; /* Ensure horizontal alignment */
+  align-items: flex-start; /* Align items at the start */
+}
+
+.w-full {
+  flex: 1; /* Make sure each section takes available space */
+}
+
+/* Add a min-height to the section with h1 and image */
+.home > div {
+  /* min-height: 300px; Adjust as needed */
+}
+
+.loginbox{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* Slide down animation for header */
+@keyframes slideDown {
   from {
-    transform: rotate(0deg);
+    transform: translateY(-100%);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(0);
+    opacity: 1;
   }
+}
+/* Fade in animation for navbar options */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveToOriginalleft {
+  from {
+    transform: translateX(-200px); 
+  }
+  to {
+    transform: translateX(0); 
+  }
+}
+
+@keyframes moveToOriginalright {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0); 
+  }
+}
+
+.rowcontainer {
+  position: relative;
+}
+
+.left {
+  animation: moveToOriginalleft 1s ease-out forwards;
+}
+
+.right {
+  animation: moveToOriginalright 1s ease-out forwards;
+}
+
+.avatar {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+.aboutcontainer {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.inforows {
+  width: 100%;
+  max-width: 80%;
+}
+
+.rowcontainer {
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}
+
+.rowheading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.rowtext {
+  font-size: 1.25rem;
+}
+.contactcont {
+  background-image: url("./assets/contactus.jpg");
+  height: 100vh;
+  background-size: cover;
 }
