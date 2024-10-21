@@ -5,7 +5,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 function Home() {
   return (
     <div>
-       <div className="home max-h-full  flex flex-col md:flex-row items-center lg:items-start lg:justify-between lg:gap-8  bg-slate-100">
+       <div className="h-full  flex flex-col lg:flex-row items-center lg:items-start lg:justify-between lg:gap-8  bg-slate-100">
       {/* Left Side: Carousel */}
       <div className="w-full  md:w-1/2">
         <div id="carouselExample" className="carousel slide">
@@ -39,7 +39,7 @@ function Home() {
       <p className="font-PTSans text-center lg:text-start mb-4 lg:text-base xl:text-3xl">
         "See Reviews, Compare Prices, and Make Informed Choices!" Highlights transparency and decision-making support.
       </p>
-      <form className="w-2/3 lg:w-3/4 "> {/* Add relative positioning */}
+      <form className="w-2/3 lg:w-3/4  mb-6 lg:mb-0"> {/* Add relative positioning */}
       <LocationOnIcon className='transform translate-y-8 translate-x-1' />
         <input
           type="search"

@@ -9,7 +9,7 @@ function IconBanner() {
         navigate('/popular')
     }
   return (
-    <div className='container'>
+    <div className='container p-5'>
       <div className="IconBanner_iconBanner__udc_K IconBanner_scrollContainer__bWzKf flex gap-5 flex-wrap justify-center items-start" data-testid="icon-banner">
         <a className="IconBanner_iconButton__WenCb  duration-300 hover:scale-110" onClick={handleclick}>
           <img className="IconBanner_iconImg__axP9l" src="https://media.angi.com/s3fs-public/HandyPerson.svg" alt="Handyperson" />
