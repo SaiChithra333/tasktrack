@@ -7,7 +7,7 @@ function Home() {
     <div>
        <div className="h-full  flex flex-col lg:flex-row items-center lg:items-start lg:justify-between lg:gap-8  bg-slate-100">
       {/* Left Side: Carousel */}
-      <div className="w-full  md:w-1/2">
+      <div className="w-full  lg:w-1/2">
         <div id="carouselExample" className="carousel slide">
           <div className="carousel-inner  ">
             <div className="carousel-item active">
